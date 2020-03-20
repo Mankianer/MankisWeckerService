@@ -36,9 +36,10 @@ public class WeckerController {
     }
   }
 
-  public void add(Wecker wecker){
-    weckerRepo.save(wecker);
+  public Wecker add(Wecker wecker){
+    Wecker save = weckerRepo.save(wecker);
     set(wecker);
+    return save;
   }
 
   public void onAlert(Wecker wecker){
