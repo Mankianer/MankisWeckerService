@@ -20,6 +20,9 @@ public class WeckerController {
   @Autowired
   private ThreadPoolTaskScheduler threadPoolTaskScheduler;
 
+  @Autowired
+  private ConfigPostProzessor configPostProzessor;
+
   @PostConstruct
   public void intit(){
     weckerRepo.findAll().forEach(wecker -> set(wecker));
@@ -45,5 +48,6 @@ public class WeckerController {
   public void onAlert(Wecker wecker){
     log.info("Alarm! {} Config[{}] ", wecker.getDateTime(), wecker.getConfig());
     weckerRepo.delete(wecker);
+    configPostProzessor.run(wecker.getConfig());
   }
 }
