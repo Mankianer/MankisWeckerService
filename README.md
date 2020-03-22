@@ -29,7 +29,7 @@ gradlew bootRun
 1. Run Gradle with the Task bootJar.
 
 ```
-gradlew bootJar
+gradlew build
 ```
 
 Runnable Jar: build/libs/mankisweckerservice-VERSION.jar
