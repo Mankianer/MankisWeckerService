@@ -12,7 +12,7 @@ A Microservice for my SmartHome.
 What things you need to run the software and how to install them
 
 ```
-Java >= 14
+Java >= 11
 ```
 
 ### Installing
