@@ -62,6 +62,10 @@ java -jar PATH_TO_JAR.jar
 
 Dev-Version
 
+## Docs
+
+Swagger: /swagger-ui.html
+
 ## Acknowledgments
 
 * Hat tip to anyone whose code was used
